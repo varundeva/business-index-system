@@ -51,12 +51,15 @@ Create Permission
                 <th>Business Owner:</th>
                 <td>{{ $business['owner'] }}</td>
             </tr>
+
             <tr>
                 <th>Business Approval:</th>
                 <td>{{ $business['approved'] }}</td>
             </tr>
+
         </table>
     </div>
+    @role('admin')
     <div class="card-footer">
 
         <div class="card-tools">
@@ -82,5 +85,6 @@ Create Permission
 
         </div>
     </div>
+    @endrole
 </div>
 @endsection
